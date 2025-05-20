@@ -31,6 +31,9 @@ Infrastructure: Managed using Terraform
 
 DNS (optional): Route 53 (not implemented unless required)
 
+scss
+Copy
+Edit
 User → CloudFront → S3 (Next.js build files)
 🧱 Tech Stack
 Next.js: React-based framework (for building the portfolio)
@@ -56,14 +59,16 @@ A valid AWS account
 
 🚀 Deployment Steps
 1. 🔁 Clone the Project Repository
-
-git clone https://github.com/jeansocio/portfolio-website-deployment(terraform-on-aws).git
+bash
+Copy
+Edit
+git clone https://github.com/your-username/james-portfolio-terraform.git
 cd james-portfolio-terraform
 2. 🌍 Build the Next.js Project
 bash
 Copy
 Edit
-cd nextjs-blog
+cd nextjs-portfolio
 npm install
 npm run build
 Copy the contents of the out/ folder into your deployment folder if you're using next export.
@@ -74,31 +79,45 @@ Terraform will create the bucket, and you can upload files manually or automate 
 4. 📄 Set Your Variables
 Edit the terraform.tfvars file:
 
+hcl
+Copy
+Edit
 vpc_cidr      = "10.0.0.0/16"
 subnet_cidr   = ["10.0.1.0/24", "10.0.2.0/24"]
 subnet_names  = ["subnet-1", "subnet-2"]
 5. 🧱 Initialize Terraform
-
+bash
+Copy
+Edit
 terraform init
 6. 📋 Plan the Deployment
-
+bash
+Copy
+Edit
 terraform plan
 7. 🚀 Apply the Configuration
-
+bash
+Copy
+Edit
 terraform apply
 📦 Project Structure
+css
+Copy
+Edit
 .
 ├── modules/
 │   └── vpc/
 │       ├── main.tf
 │       ├── variables.tf
 │       └── outputs.tf
-├── nextjs-blog/
+├── nextjs-portfolio/
 │   └── (Next.js app files)
 ├── main.tf
 ├── variables.tf
 ├── terraform.tfvars
 └── README.md
+📹 Loom Video Walkthrough
+🔗 Loom Video: Code Structure Explanation
 
 🧠 Key Concepts
 Static Site Hosting: Using S3 to serve the HTML/CSS/JS files built by Next.js
