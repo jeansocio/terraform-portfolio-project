@@ -59,15 +59,11 @@ A valid AWS account
 
 🚀 Deployment Steps
 1. 🔁 Clone the Project Repository
-bash
-Copy
-Edit
+
 git clone https://github.com/your-username/james-portfolio-terraform.git
 cd james-portfolio-terraform
 2. 🌍 Build the Next.js Project
-bash
-Copy
-Edit
+
 cd nextjs-portfolio
 npm install
 npm run build
@@ -101,9 +97,6 @@ Copy
 Edit
 terraform apply
 📦 Project Structure
-css
-Copy
-Edit
 .
 ├── modules/
 │   └── vpc/
@@ -116,8 +109,7 @@ Edit
 ├── variables.tf
 ├── terraform.tfvars
 └── README.md
-📹 Loom Video Walkthrough
-🔗 Loom Video: Code Structure Explanation
+
 
 🧠 Key Concepts
 Static Site Hosting: Using S3 to serve the HTML/CSS/JS files built by Next.js
