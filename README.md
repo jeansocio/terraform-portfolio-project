@@ -1,4 +1,4 @@
-🌐 James Smith Portfolio Website Deployment (Terraform on AWS)
+🌐 Portfolio Website Deployment (Terraform on AWS)
 📌 Project Overview
 This project involves deploying a Next.js portfolio website for James Smith, a freelance web designer, using Terraform to provision and manage AWS infrastructure. The goal is to create a scalable, cost-effective, and highly available hosting solution with fast global content delivery.
 
