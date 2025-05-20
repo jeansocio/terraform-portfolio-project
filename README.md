@@ -31,9 +31,7 @@ Infrastructure: Managed using Terraform
 
 DNS (optional): Route 53 (not implemented unless required)
 
-scss
-Copy
-Edit
+
 User → CloudFront → S3 (Next.js build files)
 🧱 Tech Stack
 Next.js: React-based framework (for building the portfolio)
@@ -62,6 +60,7 @@ A valid AWS account
 
 git clone https://github.com/your-username/james-portfolio-terraform.git
 cd james-portfolio-terraform
+
 2. 🌍 Build the Next.js Project
 
 cd nextjs-portfolio
